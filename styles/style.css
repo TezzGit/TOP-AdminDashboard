@@ -3,12 +3,12 @@ body {
     display: grid;
     grid-template-columns: 300px 1fr;
     grid-template-rows: 200px 1fr;
-    background-color: grey;
+    background-color: #e2e8f0;
     min-height: 100vh;
 }
 
 .sidebar {
-    background-color: blue;
+    background-color: #1992d4;
     grid-column: 1/2;
     grid-row: 1/3;
     display: grid;
@@ -17,6 +17,7 @@ body {
     align-items: start;
     padding-left: 20px;
     padding-top: 20px;
+    box-shadow: 2px 0px 2px #d1d7de;
 }
 
 .sidebar .group-one {
@@ -30,10 +31,11 @@ body {
 }
 
 .header {
-    background-color: blueviolet;
+    background-color: #ffffff;
     grid-column: 2/3;
     display: grid;
     grid-template: 1fr 1fr / 70% 1fr;
+    box-shadow: 0px 7px 2px -2px #cdd2d9;
 }
 
 .searchbar,
@@ -53,7 +55,7 @@ body {
 .project-buttons button {
     border-radius: 10px;
     border: none;
-    background-color: blue;
+    background-color: #1992d4;
     color: white;
     font-weight: bold;
     padding: 5px;
@@ -64,13 +66,14 @@ body {
 }
 
 .content {
-    margin-top: 20px;
+    margin-top: 5px;
+    margin-left: 3px;
     grid-row: 2/3;
     grid-column: 2/3;
-    background-color: grey;
+    background-color: #e2e8f0;
     display: grid;
-    gap: 5px;
     padding: 5px;
+    padding-top: 20px;
     grid-template-columns: 1fr 300px;
 }
 
@@ -78,23 +81,20 @@ body {
     grid-row: 1/3;
     display: grid;
     grid-template-rows: 25px 1fr;
-}
-
-.projects .heading {
-    padding-left: 45px;
+    padding:30px;
 }
 
 .projects .card-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
-    padding: 30px;
 }
 
 .card {
     background-color: white;
     border-radius: 25px;
     padding: 30px;
+    box-shadow: 2px 2px 5px 5px #d4dae0;
 }
 
 .projects .card {
@@ -102,10 +102,13 @@ body {
 }
 
 .annoucements, .trending {
-    padding-right: 30px;
     grid-column: 2/3;
     display: grid;
     grid-template-rows: 25px 1fr;
-    gap: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+}
+
+.trending {
     padding-bottom: 30px;
 }
