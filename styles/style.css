@@ -62,7 +62,7 @@ body {
     background-color: #ffffff;
     grid-column: 2/3;
     display: grid;
-    grid-template: 1fr 1fr / 70% 1fr;
+    grid-template: 1fr 1fr / 1fr 350px;
     box-shadow: 0px 7px 2px -2px #cdd2d9;
 }
 
@@ -70,38 +70,51 @@ body {
     display: grid;
     align-items: center;
     padding: 15px;
+    margin-right: 15px;
+    grid-template-columns: .5fr .5fr .7fr;
+    justify-items: end;
+}
+
+.account button {
+    border: none;
+    background-color: white;
+}
+
+.account .profile-btn img {
+    border-radius: 90%;
+    width: 48px;
 }
 
 .searchbar {
     display: flex;
-    padding: 15px;
     align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .searchbar button {
     border: none;
     background-color: white;
     flex: 0;
-    margin-left: 20px;
 }
 
 .searchbar #search-field {
     flex: 1;
-    border:none;
+    border: none;
     background-color: #e2e8f0;
     border-radius: 50px;
     padding: 10px 20px;
     margin-left: 10px;
-} 
+}
 
 .welcome {
-    display:flex;
+    display: flex;
     align-items: center;
     margin-left: 40px;
     gap: 20px;
 }
 
-.welcome img  {
+.welcome img {
     border-radius: 90%;
 }
 
@@ -191,6 +204,7 @@ body {
     padding-bottom: 15px;
 }
 
-.annoucements .card, .trending .card {
+.annoucements .card,
+.trending .card {
     margin-top: 15px;
 }
