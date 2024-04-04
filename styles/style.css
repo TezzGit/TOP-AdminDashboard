@@ -18,6 +18,8 @@ body {
     grid-template-rows: 10% 25% 1fr 1fr;
     gap: 10px;
     align-items: start;
+    padding-left: 20px;
+    padding-top: 20px;
 }
 
 .sidebar .group-one {
@@ -33,6 +35,32 @@ body {
 .header {
     background-color: blueviolet;
     grid-column: 2/4;
+    display: grid;
+    grid-template: 1fr 1fr / 70% 1fr;
+}
+
+.searchbar, .account, .welcome, .project-buttons {
+    display: grid;
+    align-items: center;
+    padding: 15px;
+}
+
+.project-buttons {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.project-buttons button {
+    border-radius: 10px;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.project-buttons button:hover {
+    background-color: lightblue;
 }
 
 .content {
