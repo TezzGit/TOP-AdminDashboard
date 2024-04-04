@@ -1,5 +1,6 @@
 body {
     background-color: black;
+    
 }
 
 .container {
@@ -75,8 +76,24 @@ body {
 }
 
 .projects {
-    background-color: bisque;
     grid-row: 1/3;
+    display: grid;
+    grid-template-rows: 25px 1fr;
+}
+
+.heading {padding-left: 45px;}
+
+.projects .card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding:30px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 25px;
+    padding:30px;
 }
 
 .annoucements {
