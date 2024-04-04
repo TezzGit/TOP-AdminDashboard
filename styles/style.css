@@ -15,6 +15,19 @@ body {
     grid-column: 1/2;
     grid-row: 1/4;
     display: grid;
+    grid-template-rows: 10% 25% 1fr 1fr;
+    gap: 10px;
+    align-items: start;
+}
+
+.sidebar .group-one {
+    display: grid;
+    gap: 10px;
+}
+
+.sidebar .group-two {
+    display: grid;
+    gap: 10px;
 }
 
 .header {
