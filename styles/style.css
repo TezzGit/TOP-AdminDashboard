@@ -101,21 +101,27 @@ body {
     background-color: #e2e8f0;
     display: grid;
     padding: 5px;
-    padding-top: 20px;
+    padding-top: 0px;
     grid-template-columns: 1fr 300px;
+}
+
+.content .heading {
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .projects {
     grid-row: 1/3;
     display: grid;
     grid-template-rows: 25px 1fr;
-    padding: 30px;
+    padding: 15px 30px;
 }
 
 .projects .card-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+    padding-top: 10px;
 }
 
 .card {
@@ -135,9 +141,17 @@ body {
     display: grid;
     grid-template-rows: 25px 1fr;
     padding-right: 30px;
-    padding-top: 30px;
+    padding-top: 15px;
+}
+
+.annoucements .card {
+    margin-bottom: 5px;
 }
 
 .trending {
-    padding-bottom: 30px;
+    padding-bottom: 15px;
+}
+
+.annoucements .card, .trending .card {
+    margin-top: 15px;
 }
