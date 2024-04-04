@@ -1,9 +1,10 @@
 body {
+    margin: 0;
     display: grid;
     grid-template-columns: 300px 1fr;
     grid-template-rows: 200px 1fr;
     background-color: grey;
-    min-height: calc(100vh - 16px);
+    min-height: 100vh;
 }
 
 .sidebar {
