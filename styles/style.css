@@ -65,8 +65,8 @@ body {
     grid-template: 1fr 1fr / 70% 1fr;
     box-shadow: 0px 7px 2px -2px #cdd2d9;
 }
+
 .account,
-.welcome,
 .project-buttons {
     display: grid;
     align-items: center;
@@ -94,6 +94,22 @@ body {
     padding: 10px 20px;
     margin-left: 10px;
 } 
+
+.welcome {
+    display:flex;
+    align-items: center;
+    margin-left: 40px;
+    gap: 20px;
+}
+
+.welcome img  {
+    border-radius: 90%;
+}
+
+.welcome .account-name {
+    font-size: 24px;
+    font-weight: bold;
+}
 
 .project-buttons {
     grid-template-columns: 1fr 1fr 1fr;
