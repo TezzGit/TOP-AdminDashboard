@@ -79,7 +79,7 @@ body {
     grid-template-rows: 25px 1fr;
 }
 
-.heading {
+.projects .heading {
     padding-left: 45px;
 }
 
@@ -94,15 +94,17 @@ body {
     background-color: white;
     border-radius: 25px;
     padding: 30px;
+}
+
+.projects .card {
     min-height: 150px;
 }
 
-.annoucements {
-    background-color: brown;
+.annoucements, .trending {
+    padding-right: 30px;
     grid-column: 2/3;
-}
-
-.trending {
-    background-color: aqua;
-    grid-column: 2/3;
+    display: grid;
+    grid-template-rows: 25px 1fr;
+    gap: 30px;
+    padding-bottom: 30px;
 }
