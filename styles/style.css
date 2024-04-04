@@ -66,8 +66,7 @@ body {
     box-shadow: 0px 7px 2px -2px #cdd2d9;
 }
 
-.account,
-.project-buttons {
+.account {
     display: grid;
     align-items: center;
     padding: 15px;
@@ -112,17 +111,21 @@ body {
 }
 
 .project-buttons {
-    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
     gap: 15px;
+    align-items: center;
+    margin-right: 40px;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .project-buttons button {
-    border-radius: 10px;
+    border-radius: 20px;
     border: none;
     background-color: #1992d4;
     color: white;
     font-weight: bold;
-    padding: 5px;
+    padding: 15px;
+    font-size: 15px;
 }
 
 .project-buttons button:hover {
