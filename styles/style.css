@@ -254,6 +254,26 @@ body {
     padding: 30px;
 }
 
+.annoucements .card {
+    display: grid;
+    grid-template-rows: 1fr 1px 1fr 1px 1fr;
+    align-items: center;
+}
+
+.linebreak {
+    height: 1px;
+    background-color: lightgrey;
+}
+
+.trending-article .heading {
+    font-size: 14px;
+}
+
+.trending-article .blurb {
+    font-size: 13px;
+    color: grey;
+}
+
 .trending .card {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -261,7 +281,7 @@ body {
 }
 
 .trend-account {
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
 }
