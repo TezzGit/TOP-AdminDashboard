@@ -171,17 +171,54 @@ body {
 
 .projects .card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
     gap: 30px;
     padding-top: 10px;
     justify-items: center;
+    margin-top: 15px;
 }
 
 .card {
-    background-color: white;
     border-radius: 25px;
-    padding: 30px;
     box-shadow: 2px 2px 5px 5px #d4dae0;
+}
+
+.projects .card {
+    background: linear-gradient(to right, #f0b429 10px, white 10px);
+    display: grid;
+    grid-template-columns: 5px 1fr;
+}
+
+.projects .card-text {
+    grid-column: 2/3;
+    border-radius: 25px;
+    margin: 20px 20px 10px;
+    display: grid;
+    grid-template-rows: 25px;
+}
+
+.card-heading {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-body {
+    font-size: 14px;
+}
+
+.card-controls {
+    justify-self: end;
+    align-self: end;
+    margin-bottom: 10px;
+}
+
+.card-controls button {
+    border: 1px solid white;
+    background-color: white;
+}
+
+.card-controls button:hover {
+    border: 1px solid lightgrey;
 }
 
 .projects .card {
@@ -209,4 +246,6 @@ body {
 .annoucements .card,
 .trending .card {
     margin-top: 15px;
+    background-color: white;
+    padding: 30px;
 }
