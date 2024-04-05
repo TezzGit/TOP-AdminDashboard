@@ -253,3 +253,24 @@ body {
     background-color: white;
     padding: 30px;
 }
+
+.trending .card {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.trend-account {
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+.trending .profile-picture {
+    border-radius: 90%;
+    width: 50px;
+}
+
+.trending .project-name {
+    color: grey;
+}
