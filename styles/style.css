@@ -182,6 +182,11 @@ body {
     box-shadow: 2px 2px 5px 5px #d4dae0;
 }
 
+.projects .card:hover {
+    scale: 1.1;
+    z-index: 1;
+}
+
 .projects .card {
     background: linear-gradient(to right, #f0b429 10px, white 10px);
     display: grid;
